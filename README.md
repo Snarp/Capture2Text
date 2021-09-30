@@ -1,16 +1,14 @@
 # Capture2Text
 
-Linux CLI port of Capture2Text v4.5.1 (Ubuntu)
+Linux CLI port of Capture2Text v4.5.1. Tested as working in Ubuntu 18.04.
 
-The OCR results from Capture2Text were generally better than standard Tesseract, so it seemed ideal to make this run on Linux. It turns out the console version can actually run without anything more than build changes.
-
-## Build Capture2Text
+## Building
 
 ```bash
-bash ./install.bash
+sudo bash ./build.bash
 ```
 
-## Adding Support For Different Languages
+## Installing Language Dictionaries
 
 Download your desired dictionaries from <https://sourceforge.net/projects/capture2text/files/Dictionaries/>.
 
@@ -18,12 +16,5 @@ Either unzip the dictionary ZIP files directly into the base `tessdata` director
 
 ```bash
 bash ./install_dictionaries.bash
+bash ./install_dictionaries.bash -d  # deletes the ZIP files after installation
 ```
-
-## TODO
-
-* Make the build file more generic, so as to be able to build on Windows still
-
-* Add some additional instructions on packages to install and how to build
-
-* Figure out how to avoid `-platform offscreen` for the command line (over SSH)

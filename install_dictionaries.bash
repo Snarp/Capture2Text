@@ -8,8 +8,16 @@
 # this script. Alternately, they can simply be unzipped directly into the 
 # "tessdata" directory.
 
-for filename in ./dictionaries/*.zip; do
+for filename in ./dictionaries/*.zip
+do
   [ -e "$filename" ] || continue  # end if no dictionaries found
+  
   echo "Installing dictionary: $filename"
   unzip -o $filename -d "tessdata"
+
+  if [ $1 == "-d" ]
+  then
+    echo "Deleting install file: $filename"
+    rm $filename
+  fi
 done
