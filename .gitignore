@@ -33,3 +33,9 @@
 
 # Ignore QTCreator files
 *.pro.user
+
+*.zip
+*.7z
+*.html
+dictionaries/*
+tessdata/*
