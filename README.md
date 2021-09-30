@@ -2,9 +2,10 @@
 
 Linux CLI port of Capture2Text v4.5.1. Tested as working in Ubuntu 18.04.
 
-## Building
+## Getting Started
 
 ```bash
+sudo apt-get install -y libtesseract-dev qtbase5-dev libleptonica-dev
 sudo bash ./build.bash
 ```
 
