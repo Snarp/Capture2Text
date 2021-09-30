@@ -17,9 +17,8 @@ do
   echo "Installing dictionary: $filename"
   unzip -o $filename -d "tessdata"
 
-  if [ $1 == "-d" ]
-  then
-    echo "Deleting install file: $filename"
+  if [ "$1" == "-d" ]; then
+    echo "Deleting dictionary install file: $filename"
     rm $filename
   fi
 done
