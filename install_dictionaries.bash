@@ -8,7 +8,7 @@
 # this script. Alternately, they can simply be unzipped directly into the 
 # "tessdata" directory.
 
-echo "Installing dictionaries for Capture2Text..."
+echo "Attempting to install downloaded dictionaries for Capture2Text..."
 
 for filename in ./dictionaries/*.zip
 do

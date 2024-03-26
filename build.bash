@@ -9,4 +9,4 @@ make
 
 echo "Finished building Capture2Text."
 
-bash ./install_dictionaries.bash
+bash ./install_english_dictionary.bash

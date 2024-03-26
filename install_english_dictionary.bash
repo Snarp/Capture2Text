@@ -17,4 +17,4 @@ echo "Installing English dictionary..."
 unzip -o "./dictionaries/English.zip" -d "tessdata"
 rm "./dictionaries/English.zip"
 
-echo "Finished installing dictionary."
+echo "Finished installing English dictionary."
